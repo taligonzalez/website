@@ -45,7 +45,7 @@ const ConceptArt = () => {
       >
         <img src='/mainart/lilyOfTheValley.jpg' alt="Peri and Dale at the Lily of the Valley Cafe"/>
         <motion.p className='text-ca'>
-          2025. Characters Peri Cosma, Dale Dimmadome, and Angela Wells and background belong to Nickelodeon.
+          2025. Characters, Peri Cosma, Dale Dimmadome, and Angela Wells, and background belong to Nickelodeon.
         </motion.p>
       </motion.div>
 
@@ -54,7 +54,7 @@ const ConceptArt = () => {
       >
         <img src='/mainart/houseOnTheOutlands.jpg' alt="Alena: cyberpunk Hispanic women with silver earpieces, lavender minidress, silver metal corset, silver shoulder jewerly, and white gloves and boots"/>
         <motion.p className='text-ca'>
-          2024. Character Harmony belongs to Make Originals.
+          2024. Character, Harmony, belongs to Make Originals.
         </motion.p>
       </motion.div>
       <Footer/>
