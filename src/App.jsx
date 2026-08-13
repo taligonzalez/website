@@ -1,16 +1,16 @@
+import "./App.css"
 import Home from "./Home";
-import About from "./About";
-import Login from "./Login";
+import Programming from "./Programming";
+import Academics from "./Academics";
 import { Routes, Route, Navigate } from "react-router";
-import { Link } from "react-router";
+import { Link, Outlet } from "react-router";
 import Navbar from "./Navbar";
 import ErrorPage from "./ErrorPage";
-import Tutorial from "./Tutorial";
-import ReactTut from "./ReactTut";
-import JSTut from "./JSTut";
-import NodeTut from "./NodeTut";
-import Products from "./Products";
-import ProductDetails from "./ProductDetails";
+import Art from "./Art";
+import Illustration from "./Illustration";
+import ConceptArt from "./ConceptArt";
+import Animation from "./Animation";
+
 function App() {
   return (
     <div>
@@ -18,25 +18,15 @@ function App() {
       <Routes>
         <Route element={<Navbar />}> {/* This is layout  */}
           <Route path="/" element={<Home />} />
-          <Route path="/user"> {/*Route Prefix*/}
-            <Route path="about" element={<About />} />
-            <Route path="login" element={<Login />} />
-          </Route>
-
-         {/* <Route path="/user/about" element={<About />} />
-         <Route path="/user/login" element={<About />} /> */}
-
+          <Route path="/programming" element={<Programming />} />
+          {/* <Route path="/academics" element={<Academics />} /> */}
           <Route path="/*" element={<ErrorPage />} />
-          <Route path="/tutorial" element={<Tutorial />}>
-            <Route index element={<ReactTut />} />
-            <Route path="react" element={<ReactTut />} />
-            <Route path="javascript" element={<JSTut />} />
-            <Route path="node" element={<NodeTut />} />
+          <Route path="/art" element={<Art />}>
+            <Route index element={<Illustration />} />
+            <Route path="illustration" element={<Illustration />} />
+            <Route path="conceptart" element={<ConceptArt />} />
+            <Route path="animation" element={<Animation />} />
           </Route>
-          <Route path="/products/list?" element={<Products/>} />
-          {/* <Route path="/products/list" element={<Products/>} /> */}
-          <Route path="/products/:id/:name?" element={<ProductDetails/>}/>{/* Dynamic Routing */}
-          
         </Route>
 
         {/* <Route path="/*" element={<Navigate to="/" />}/> */}

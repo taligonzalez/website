@@ -1,0 +1,151 @@
+:root {
+  --text-font: "FuzzyBubbles"; 
+  --primary-color: #B5FF3B;
+  --secondary-color: #F1F7C9;
+  --dark-color: #313334;
+  --accent-color: #EF5C83;
+  --light-accent: #F9ABBF;
+  --text-color: black;
+  --light-text: #94a3b8;
+  --background: white;
+  --section-bg: white;
+  --card-bg: white;
+  --nav-bg: white;
+  --card-border: black;
+}
+
+.art-header {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    padding-bottom: 0.05rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.art ul{
+ display: flex;
+ justify-content: center;
+ list-style-type: none;
+
+}
+
+.art ul li{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/* .active{
+    font-weight: bold;
+    color: red;
+} */
+
+.custom-active {
+    font-weight: bold !important;
+    color: var(--light-accent) !important;
+}
+
+.ca-img {
+    flex: 1;
+    position: relative;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.ca-img img {
+    max-width: 950px;
+    display: flex;
+    margin: auto;
+    border: 10px solid var(--accent-color);
+    border-radius: 3rem;
+}
+
+.text-ca {
+    max-width: 1080px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.video-box {
+    flex: 1;
+    position: relative;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.ani-video {
+    border: 10px solid var(--accent-color);
+    border-radius: 3rem;
+}
+
+.text-ani-vertical {
+    max-width: 360px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.text-ani {
+    max-width: 710px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media (max-width: 970px){
+    .ca-img img {
+        max-width: 600px;
+    }
+    .text-ca {
+        max-width: 620px;
+    }
+}
+
+
+@media (max-width: 645px){
+    .ca-img img {
+        max-width: 350px;
+    }
+    .text-ca {
+        max-width: 370px;
+    }
+}
+
+@media (max-width: 350px){
+    .ca-img img {
+        max-width: 300px;
+    }
+    .text-ca {
+        max-width: 320px;
+    }
+}
+
+@media (max-width:747px){
+    .ani-video {
+        max-width: 450px;
+    }
+    .text-ani {
+        max-width: 450px;
+    }
+}
+
+@media (max-width:490px){
+    .ani-video {
+        max-width: 300px;
+    }
+    .text-ani {
+        max-width: 300px;
+    }
+}

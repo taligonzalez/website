@@ -1,28 +1,95 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    padding: 0 10px;
-    align-items: center;
+:root {
+  --text-font: "FuzzyBubbles"; 
+  --primary-color: #B5FF3B;
+  --secondary-color: #F1F7C9;
+  --dark-color: #313334;
+  --accent-color: #EF5C83;
+  --light-accent: #F9ABBF;
+  --text-color: black;
+  --light-text: #94a3b8;
+  --background: white;
+  --section-bg: white;
+  --card-bg: white;
+  --nav-bg: white;
+  --card-border: black;
 }
 
-.header ul{
-    list-style-type: none;
-    display: flex;
-    width: 300px;
-    justify-content: space-evenly;
+/*NAVBAR*/
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 4px 30px rgba(241, 247, 201, 0.7);
+  border-bottom: 1px solid white;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+.logo-img {
+  padding-top: 10px;
+  height: 4.8rem;
 }
 
-.link{
-    text-decoration: none;
+.logo-img:hover {
+  animation: swing 1s;
 }
 
-.active{
-    font-weight: bold;
-    color: red;
+@keyframes swing {
+  0% {
+    transform: rotateZ(0deg) translate(0,0);
+  }
+  20%{
+    transform: rotateZ(-20deg) translate(15px, 5px);
+  }
+  40%{
+    transform: rotateZ(10deg) translate(-15px, 2px);
+  }
+  60%{
+    transform: rotateZ(-11deg) translate(10px, -1px);
+  }
+  80%{
+    transform: rotateZ(0deg) translate(0,0);
+  }
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 700;
+  transition: all 0.3 ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.link:hover {
+  color: var(--accent-color);
+}
+
+.link:hover::after {
+  width: 100%;
 }
