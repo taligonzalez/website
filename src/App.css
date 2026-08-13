@@ -515,9 +515,20 @@ body {
   box-shadow: 0 4px 12px rgba(244, 144, 182, 0.2);
 }
 
+.contact-form input:autofill {
+  background: var(--secondary-color);
+}
+
 .contact-form textarea {
   min-height: 150px;
   resize: vertical;
+}
+
+.contact-form input:-webkit-autofill,
+.contact-form textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--secondary-color) inset !important;
+  -webkit-text-fill-color: black !important;
 }
 
 .submit-btn {
