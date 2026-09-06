@@ -69,7 +69,7 @@ export const Hero = () => {
                         className="hero-description"
                         variants={fadeInUp}
                     >
-                        Howdy! My name is Natalie Gonzalez and I am a software engineer who focuses on developing creative solutions and products. <br/> <br/>Academically, I am the loudest and proudest member of the Fighting Texas Aggie Class of 2027 with a Bachelor's in Computer Science from the College of Engineering and a minor in Game Development. <br/> <br/> In any project I work on, I make sure to bring a creative flare that makes the work authentic!
+                        Howdy! My name is Natalie Gonzalez and I am a software engineer who focuses on developing creative solutions and products. <br/> <br/>Academically, I am the loudest and proudest member of the Fighting Texas Aggie Class of 2027 with a Bachelor's in Computer Science from the College of Engineering and a minor in Game Development. <br/> <br/> In any project I work on, I make sure to bring a creative flair that makes the work authentic!
                     </motion.p>
 
                     <motion.div 
