@@ -73,6 +73,29 @@
     margin-left: 12%;
 }
 
+.mango {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    /* margin-left: 0; */
+}
+
+.mango a {
+    margin-left: 0;
+}
+
+.mango:hover {
+    transform: scale(1.1);
+}
+
+.mango::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+}
+
 
 @media (max-width: 1010px) {
     .prog, .prog-layout{

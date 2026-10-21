@@ -32,7 +32,7 @@ const ConceptArt = () => {
       </motion.div>
 
       <motion.div
-        className="ca-img"
+        className="ca-img square"
       >
         <img src='/mainart/background_practice.jpg' alt="Background practice of the Mystery Shack from Gravity Falls"/>
         <motion.p className='text-ca'>
@@ -50,7 +50,7 @@ const ConceptArt = () => {
       </motion.div>
 
       <motion.div
-        className="ca-img"
+        className="ca-img square"
       >
         <img src='/mainart/houseOnTheOutlands.jpg' alt="Alena: cyberpunk Hispanic women with silver earpieces, lavender minidress, silver metal corset, silver shoulder jewerly, and white gloves and boots"/>
         <motion.p className='text-ca'>

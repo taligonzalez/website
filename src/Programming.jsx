@@ -48,6 +48,32 @@ const Programming = () => {
         <motion.div
           className='prog-layout'
         >
+          <motion.div className='prog-project mango'>
+            <a href="https://people.tamu.edu/~tali_go56/" target='blank'>
+              <img src="./tabs/mango.png" width="440"/>
+            </a>
+            {/* <img src="./tabs/mango.png" width="440"/> */}
+          </motion.div>
+          <motion.div className='prog-text'>
+            <motion.h3>
+              Personal Website Class Project (2026)
+            </motion.h3>
+            <motion.p>
+              I created a personal website for Project 1 in my Foundations of Software Engineering class. It's hosted on my university's dedicated people.tamu domain. I enjoyed the creativity of it, and it was nice to see all of my academic achievements and personal hobbies all in one place. The Javascript is a little slow when loading the stylesheets, but it is a challenge I will soon overcome.
+            </motion.p>
+            <motion.span className='prog-span'>HTML</motion.span>
+            <motion.span className='prog-span'>CSS</motion.span>
+            <motion.span className='prog-span'>Javascript</motion.span>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+
+      <motion.div
+        className='prog'
+      >
+        <motion.div
+          className='prog-layout'
+        >
           <motion.div className='prog-project'>
             <iframe
               id="hashnode"

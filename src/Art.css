@@ -63,11 +63,15 @@ h1 {
 }
 
 .ca-img img {
-    max-width: 950px;
+    max-width: 650px;
     display: flex;
     margin: auto;
     border: 10px solid var(--accent-color);
     border-radius: 3rem;
+}
+
+.square img {
+    max-width: 500px;
 }
 
 .text-ca {
